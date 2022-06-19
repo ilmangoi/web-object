@@ -1,0 +1,6 @@
+/**/*.*
+!/src/**/*.css
+!/src/**/*.sass
+!/src/**/*.scss
+!/src/**/*.less
+!/src/**/*.vue
