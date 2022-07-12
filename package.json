@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prettier": "prettier --write .",
-    "lint": "eslint --fix .",
+    "lint": "eslint --fix **/*.{js,ts}",
     "prepare": "husky install",
     "commit": "npx cz",
-    "slint": "stylelint --fix ."
+    "slint": "stylelint --fix **/*.{css,scss,scss,vue,html}"
   },
   "keywords": [],
   "author": "",

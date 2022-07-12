@@ -1,6 +1,10 @@
-/**/*.*
-!/src/**/*.css
-!/src/**/*.sass
-!/src/**/*.scss
-!/src/**/*.less
-!/src/**/*.vue
+/dist/*
+.local
+.history
+.output.js
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
