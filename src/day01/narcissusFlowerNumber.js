@@ -14,6 +14,8 @@ function narcissusFlowerNumber(num) {
   return sum === num
 }
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 100; i < 1000; i++) {
   if (narcissusFlowerNumber(i)) console.log(i)
 }
+
+module.exports = narcissusFlowerNumber

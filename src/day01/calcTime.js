@@ -14,7 +14,7 @@ function calcTime(secs) {
   for (let i = 0; i < 4; i++) {
     if (secs >= division[i]) {
       time[i] = parseInt(secs / division[i])
-      secs -= division[i] * time[i]
+      secs %= division[i]
     }
   }
 
@@ -29,6 +29,5 @@ function calcTime(secs) {
   }
   return formatStr
 }
-console.log(calcTime(1635216))
-console.log(calcTime(61))
-console.log(calcTime(3660))
+
+module.exports = calcTime

@@ -11,6 +11,5 @@ function splitNumber(number) {
   }
   return res
 }
-// console.log(splitNumber(1161427614))
 
 module.exports = splitNumber
