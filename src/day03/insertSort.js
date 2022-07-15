@@ -18,7 +18,7 @@ function insertSort(arr, isPositiveOrder) {
   for (let i = 1; i < arr.length; i++) {
     const temp = arr[i]
     let j = i - 1
-    while (j >= 0 && isPositiveOrder ? temp > arr[j] : temp < arr[j]) {
+    while (j >= 0 && isPositiveOrder ? temp < arr[j] : temp > arr[j]) {
       arr[j + 1] = arr[j]
       j--
     }
@@ -28,6 +28,6 @@ function insertSort(arr, isPositiveOrder) {
 }
 
 // const arr = [9, 8, 7, 6, 5, 4, 3, 2, 1]
-// console.log(insertSort(arr))
+// console.log(insertSort(arr, false))
 
 module.exports = insertSort
